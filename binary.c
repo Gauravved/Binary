@@ -2,8 +2,8 @@
 #include <stdlib.h>
 int main() 
 {
-	long ar[32];
-	int n,i,a[5]={0,0,0,0,0},m,cnt[10],j,k,grt=0;
+	long ar[32],n;
+	int i,a[5],m,cnt[10],j,k,grt=0;
 	double f;
 	char choice;
 	system("CLS");
@@ -24,17 +24,6 @@ int main()
 				n=n/2;
 			}
 			m=i;
-			k=0;
-			do
-			{	
-				if(f>=1)
-				{
-					f=f-(int)f;
-				}	
-				f=f*2;
-				a[k]=(int)f;
-				k++;
-			}while(f>=0 && k<4);
 			printf("The binary number is :");
 			for(i=m-1;i>=0;i--)
 			{
@@ -58,11 +47,18 @@ int main()
 			}
 			printf(".");
 			k=0;
-			while(k<4)
-			{
+			do
+			{	
+				if(f>=1)
+				{	
+					f=f-(int)f;
+				
+				}	
+				f=f*2;
+				a[k]=(int)f;
 				printf("%d",a[k]);
 				k++;
-			}
+			}while(f>=0 && k<4);
 			grt=cnt[0];
 			for(i=m-1;i>=0;i--)
 			{
