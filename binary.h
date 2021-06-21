@@ -5,7 +5,7 @@
 double f=0;
 long long l;
 long n,ar[32];
-int a[32],i,j,k,r,m,cho,bit,c,v[8]={1,0,0,0,0,0,0,0}; 
+int a[32],i,j,k,r,m,cho,bit,c,v[8]={1,0,0,0,0,0,0,0; 
 int grt=0,cnt[10],octal,sum;
 char ch,sen[300],choice,hexa[20];
 void dtob()
